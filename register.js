@@ -14,10 +14,10 @@
 
 function fun() {
 
-    username = document.getElementById("fullname").value;
-    email = document.getElementById("emailInput").value;
-    pass = document.getElementById("passwordInput").value;
-    repass = document.getElementById("re_password").value;
+   let username = document.getElementById("fullname").value;
+   let email = document.getElementById("emailInput").value;
+   let pass = document.getElementById("passwordInput").value;
+   let repass = document.getElementById("re_password").value;
 
     function name(username) {
         if (username == "") {
@@ -26,10 +26,11 @@ function fun() {
     }
 
     function echeck(email) {
-        // var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        if (email == "") {
+        var email_sign = /@/i;
+        if (email == "" || email_sign ==" ") {
             alert("email is required")
         }
+        
     }
 
     function password(pass) {
