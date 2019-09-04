@@ -29,6 +29,12 @@ function fun() {
         // var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         if (email == "") {
             alert("email is required")
+            document.getElementById('submit').disabled=true;
+            email.style.borderColor="red";
+        }
+        else
+        {
+            document.getElementById('submit).disabled=false;
         }
     }
 
